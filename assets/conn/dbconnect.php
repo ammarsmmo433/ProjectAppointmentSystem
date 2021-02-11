@@ -45,7 +45,11 @@
 //   }
 ?>
 <?php
-$con = mysqli_connect("localhost","root","","appo");
+ $dbhost = "den1.mysql6.gear.host";
+ $dbuser = "projdb";
+ $dbpass = "Nt2TO4I!oZo?";
+ $db = "projdb";
+$con = mysqli_connect($dbhost,$dbuser,$dbpass,$db);
 
 // Check connection
 if (mysqli_connect_errno())
